@@ -1,25 +1,25 @@
 class RedisPane < Formula
   desc "Terminal UI for Redis: browse keys, watch them change live, edit safely"
   homepage "https://redis-pane.github.io/redis-pane/"
-  version "0.1.0-beta.8"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v0.1.0-beta.8/redis-pane-aarch64-apple-darwin.tar.xz"
-      sha256 "4b59c1a3a94587266bad7d6c3b031307cbdb91a03601a06b6fef1a6902f596bf"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-aarch64-apple-darwin.tar.xz"
+      sha256 "13ca964fa699f26e0684ba62c82b5f60ad41aa98a1d4a87036f5321b35e6775d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v0.1.0-beta.8/redis-pane-x86_64-apple-darwin.tar.xz"
-      sha256 "3054d2f81ce1b2b66471fcbf0817556e8e99606d2897fb130d09737a53102ba8"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-x86_64-apple-darwin.tar.xz"
+      sha256 "0d4d165182d4781d8f0ff70e76938961e24d1b529592d9a6bf62d42b60d4d705"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v0.1.0-beta.8/redis-pane-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "59aedcce5281e62a6eb6eba94031047024caf388562261e6ea1b3c69fe651eff"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "6830df247476d33d0ea8c023338dedcc087295b113678636444194bf2ee48b57"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v0.1.0-beta.8/redis-pane-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "45346052c94d3164524e980ab02a0dee1d40984bfc23d7688366a27b46e43453"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "eb56059c9d0be2e7c368bf76ee36b9c233a2973b550d3e4a2265263ccab8d322"
     end
   end
   license "MIT"
