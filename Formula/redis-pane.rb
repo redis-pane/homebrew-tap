@@ -1,25 +1,25 @@
 class RedisPane < Formula
   desc "Terminal UI for Redis: browse keys, watch them change live, edit safely"
   homepage "https://redis-pane.github.io/redis-pane/"
-  version "1.0.0"
+  version "1.1.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-aarch64-apple-darwin.tar.xz"
-      sha256 "13ca964fa699f26e0684ba62c82b5f60ad41aa98a1d4a87036f5321b35e6775d"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.1.0/redis-pane-aarch64-apple-darwin.tar.xz"
+      sha256 "bcb842e0030e11523d6be99db5495d47eda827f3d7c38c4000b7fb5e0e559705"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-x86_64-apple-darwin.tar.xz"
-      sha256 "0d4d165182d4781d8f0ff70e76938961e24d1b529592d9a6bf62d42b60d4d705"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.1.0/redis-pane-x86_64-apple-darwin.tar.xz"
+      sha256 "6330e26891a0d816063d0f2a4de0c47e4aec2170fbf02cbc5640e0e9672e74c8"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "6830df247476d33d0ea8c023338dedcc087295b113678636444194bf2ee48b57"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.1.0/redis-pane-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "e241a91a50f092c613ede39e512f1c3e45134347f5cd442235ec1a6dcc2b90c6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/redis-pane/redis-pane/releases/download/v1.0.0/redis-pane-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "eb56059c9d0be2e7c368bf76ee36b9c233a2973b550d3e4a2265263ccab8d322"
+      url "https://github.com/redis-pane/redis-pane/releases/download/v1.1.0/redis-pane-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "ec2a6b6c83a2589366376d6e8f7e63e4fab66b0a6b97efb5898ed98633e4a202"
     end
   end
   license "MIT"
